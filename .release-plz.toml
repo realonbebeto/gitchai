@@ -1,12 +1,15 @@
 [workspace]
-changelog_update = false
-git_release_enable = false
-git_tag_enable = false
-semver_check = false
+git_only = true
+publish = false
+changelog_update = true
+git_release_enable = true
+git_tag_enable = true
+semver_check = true
 pr_labels = ["release"]
 # This is necessary since we need to remove the
 # workspace_hack crate in CI before publishing
 allow_dirty = false
+repo_url = "https://github.com/realonbebeto/gitchai"
 
 [changelog]
 header = """# Changelog
@@ -77,3 +80,4 @@ changelog_update = true
 changelog_path = "CHANGELOG.md"
 git_tag_name = "{{ version }}"
 git_tag_enable = true
+git_only = true
