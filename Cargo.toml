@@ -1,0 +1,10 @@
+[package]
+name = "gitchai"
+version = "0.1.0"
+edition = "2024"
+repository = "https://github.com/realonbebeto/gitchai"
+readme = "README.md"
+license = "Apache-2.0"
+
+[dependencies]
+jiff = { version = "0.2.23", default-features = false, features = ["std"] }
